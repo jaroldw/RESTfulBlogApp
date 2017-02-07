@@ -84,7 +84,7 @@ app.put('/blogs/:id', function(req, res){
         if(err){
             res.redirect('/blogs');
         } else {
-            res.redirect('/blogs' + req.params.id);
+            res.redirect('/blogs/' + req.params.id);
         }
     });
 });
